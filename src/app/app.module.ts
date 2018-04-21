@@ -23,9 +23,6 @@ import { AgmCoreModule } from '@agm/core';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
-export const firebaseConfig = environment.firebaseConfig;
-import { AngularFireModule } from 'angularfire2';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { CoreModule } from './core/core.module';
 
 import { appRoutes } from './app.routes';
@@ -40,7 +37,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashHomeComponent } from './dashboard/dash-home/dash-home.component';
 import { DashTableComponent } from './dashboard/dash-table/dash-table.component';
 import { DashFormsComponent } from './dashboard/dash-forms/dash-forms.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +50,6 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     DashHomeComponent,
     DashTableComponent,
     DashFormsComponent,
-    UserProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -82,8 +77,6 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     appRoutes,
     Angular2FontawesomeModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(firebaseConfig),
-    AngularFirestoreModule,
     CoreModule,
   ],
   providers: [LocationsService],

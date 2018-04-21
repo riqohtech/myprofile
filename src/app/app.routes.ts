@@ -9,12 +9,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashHomeComponent } from './dashboard/dash-home/dash-home.component';
 import { DashTableComponent } from './dashboard/dash-table/dash-table.component';
 import { DashFormsComponent } from './dashboard/dash-forms/dash-forms.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'login', component: UserProfileComponent},
-  {path: 'phones', loadChildren: './phone-rating/phone-rating.module#PhoneRatingModule'},
   {path: 'hallmap', component: HallMapComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'emap', component: EventsMapComponent},
