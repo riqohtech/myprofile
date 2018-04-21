@@ -1,0 +1,31 @@
+
+  .hall_map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+  }
+
+  .stands {
+    height: 800px;
+    width: 800px;
+  }
+
+  .stand:hover {
+    background-color: lightblue;
+  }
+
+  #stand_details {
+    border: 2px solid #336699;
+    background-color: #ffffff;
+    padding: 8px;
+    display: block;
+    text-align: center;
+    float: left;
+    left: 0;
+    top: 0;
+    position: absolute;
+    min-width: 200px;
+    max-width: 400px;
+    visibility: hidden;
+  }

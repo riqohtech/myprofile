@@ -1,0 +1,322 @@
+.nav {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #009688;
+}
+.nav-highlights {
+    height: 20px;
+    background-color: #009688;
+}
+.main-nav {
+    height: 80px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.company-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.company-name {
+    display: flex;
+}
+.company-name .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004d4d;
+    display: flex;
+    flex-direction: column;
+}
+.main-services {
+    font-size: 16px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links li {
+    list-style: none;
+    margin: 5px;
+}
+.nav-links li a {
+    text-align: center;
+    color: #616161;
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+}
+.nav-links li.active a {
+    color: #009688;
+    border-bottom: 3px solid #009688;
+}
+.nav-links li a:hover {
+    color: #009688;
+    border-bottom: 3px solid #009688;
+}
+.menu-button button .fa {
+    font-size: 22px;
+    color: #009688;
+}
+.hidden-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.hidden-links li {
+    list-style: none;
+}
+.hidden-links li a {
+    text-align: center;
+    background-color: #ffffff;
+    color: #009688;
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+}
+.hidden-links li .active a {
+    background-color: #009688;
+    color: #ffffff;
+}
+.hidden-links li a:hover {
+    background-color: #009688;
+    color: #ffffff;
+}
+.intro {
+    background: url('../../assets/programming.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    /* background: #009688; */
+    display: flex;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+}
+.intro-content {
+    margin: auto;
+    color: #004d4d;
+    text-align: center;
+    opacity: 0.8;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.intro-content .fa {
+    font-size: 40px;
+    color: #004d4d;
+}
+.intro .intro-content h1 {
+    color: #004d4d;
+}
+.usecase-img {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.usecase-text {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main {
+    max-width: 70%;
+    margin: auto;
+}
+.features {
+    max-width: 70%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.features-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.features-heading h1 {
+    font-size: 35px;
+    margin: 0 0 10px 0;
+}
+.features-heading p {
+    color: #888;
+    margin: 0 0 40px 0;
+}
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature {
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.feature .info {
+    margin: auto;
+    text-align: center;
+}
+.feature .info .fa {
+    font-size: 60px;
+    color: #009688;
+}
+.products {
+    max-width: 70%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.products-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.products-heading h1 {
+    font-size: 35px;
+    margin: 0 0 10px 0;
+}
+.products-heading p {
+    color: #888;
+    margin: 0 0 40px 0;
+}
+.products-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    /* transform: translateX(-100%); */
+}
+.product-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 500px;
+}
+.product-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 500px;
+}
+.product-img .fa {
+    font-size: 100px;
+    color: #009688;
+}
+.product-list h2 {
+    color: #616161;
+}
+.product-list ul {
+    padding: 0;
+    margin: 0;
+}
+.product-list li {
+    list-style: none;
+}
+.product-list li .fa {
+    margin-right: 10px;
+    color: #009688;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+.links {
+    background-color: #004d4d;
+    color: #ffffff;
+    height: 200px;
+    display: flex;
+}
+.links-content {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+.links-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.link-list ul {
+    padding: 0;
+}
+.link-list li {
+    list-style: none;
+}
+.copyright {
+    display: flex;
+    background-color: #009688;
+    color: #ffffff;
+    height: 20px;
+    justify-content: center;
+}
+@media (max-width: 1325px) {
+    .main-nav {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .nav-links {
+        padding: 0;
+    }
+    .main-nav .company-logo {
+        text-align: center;
+        justify-content: center;
+        border-bottom: 1px solid #009688;
+    }
+}
+@media (max-width: 900px) {
+    .intro {
+        background: #009688;
+    }
+    .product {
+        flex-direction: column;
+    }
+    .links {
+        height: auto;
+    }
+    .links-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 600px) {
+    .main-nav {
+        width: 75%;
+    }
+    .main-nav .company-logo {
+        justify-content: space-between;
+    }
+}

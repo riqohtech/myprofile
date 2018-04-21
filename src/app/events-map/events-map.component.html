@@ -1,0 +1,21 @@
+<app-nav></app-nav>
+
+<div class="events">
+
+  <mat-card class="map mat-elevation-z9">
+    <agm-map [latitude]="lat"
+             [longitude]="lng"
+             [zoom]="zoom">
+      <agm-marker *ngFor="let m of markers"
+                  [latitude]="m.lat"
+                  [longitude]="m.lng" 
+                  (markerClick)="markerClicked(m)">
+      </agm-marker>
+    </agm-map>
+  </mat-card>
+
+  <mat-card #details *ngIf="isOpen" class="details mat-elevation-z9">
+    <button mat-raised-button color="accent" (click)="viewEvent()">Book</button>
+  </mat-card>
+
+</div>

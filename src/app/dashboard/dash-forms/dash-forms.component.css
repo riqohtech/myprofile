@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+.input-control {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.input-control label {
+    flex-basis: 10%;
+}
+.input-control input {
+    flex: 1;
+    margin-left: 20px;
+}

@@ -1,0 +1,102 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+.main h1 {
+    color: #004d4d;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.stat {
+    height: 50px;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.stat .stat-icon {
+    display: flex;
+    flex-basis: 20%;
+}
+.stat .stat-data {
+    display: flex;
+    flex-basis: 80%;
+    flex-direction: column;
+}
+.stat-icon .fa {
+    font-size: 35px;
+}
+.stat p {
+    margin-top: 0;
+}
+.graphs {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.graph {
+    height: 400px;
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.activity {
+    margin-top: 400x;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1300px) {
+    .stat {
+        flex-basis: 25%;
+    }
+    .graph {
+        flex-basis: 43%;
+    }
+}
+@media (max-width: 1100px) {
+    .main h1 {
+        font-size: 24px;
+    }
+    .graph {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 900px) {
+    .stat {
+        flex-basis: 33%;
+    }
+    .graph {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 700px) {
+    .stat {
+        flex-basis: 100%;
+        /* No side bar */
+        /* flex-basis: 40%; */
+    }
+    .graph {
+        flex-basis: 100%;
+    }
+}
+/* No side bar */
+/* @media (max-width: 500px) {
+    .stat {
+        flex-basis: 100%;
+    }
+} */

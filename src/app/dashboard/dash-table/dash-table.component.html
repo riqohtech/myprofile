@@ -1,0 +1,66 @@
+<div class="main">
+  <h1>Table Content</h1>
+  <mat-card class="table mat-elevation-z8">
+    <h3>Table of elements</h3>
+    <div class="example-header">
+      <mat-form-field floatPlaceholder="never">
+        <input matInput #filter placeholder="Filter elements">
+      </mat-form-field>
+    </div>
+    
+    <mat-table [dataSource]="dataSource" class="example-table" matSort>
+      <ng-container matColumnDef="position">
+        <mat-header-cell *matHeaderCellDef mat-sort-header class="example-header-cell">Position</mat-header-cell>
+        <mat-cell *matCellDef="let row" class="example-cell">{{row.position}}</mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header class="example-header-cell">Name</mat-header-cell>
+        <mat-cell *matCellDef="let row" class="example-cell">{{row.name}}</mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="weight">
+        <mat-header-cell *matHeaderCellDef mat-sort-header class="example-header-cell">Weight</mat-header-cell>
+        <mat-cell *matCellDef="let row" class="example-cell">{{row.weight}}</mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="symbol">
+        <mat-header-cell *matHeaderCellDef mat-sort-header class="example-header-cell">Symbol</mat-header-cell>
+        <mat-cell *matCellDef="let row" class="example-cell">{{row.symbol}}</mat-cell>
+      </ng-container>
+    
+      <mat-header-row *matHeaderRowDef="displayedColumns" class="example-header-row"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;" class="example-row"></mat-row>
+    </mat-table>
+  </mat-card>
+</div>
+
+<!-- <div class="example-container mat-elevation-z8">
+  <cdk-table #table [dataSource]="dataSource" class="example-table">
+    <ng-container cdkColumnDef="userId">
+      <cdk-header-cell *cdkHeaderCellDef class="example-header-cell"> ID </cdk-header-cell>
+      <cdk-cell *cdkCellDef="let row" class="example-cell"> {{row.id}} </cdk-cell>
+    </ng-container>
+
+    <ng-container cdkColumnDef="progress">
+      <cdk-header-cell *cdkHeaderCellDef class="example-header-cell"> Progress </cdk-header-cell>
+      <cdk-cell *cdkCellDef="let row" class="example-cell"> {{row.progress}}% </cdk-cell>
+    </ng-container>
+
+    <ng-container cdkColumnDef="userName">
+      <cdk-header-cell *cdkHeaderCellDef class="example-header-cell"> Name </cdk-header-cell>
+      <cdk-cell *cdkCellDef="let row" class="example-cell"> {{row.name}} </cdk-cell>
+    </ng-container>
+
+    <ng-container cdkColumnDef="color">
+      <cdk-header-cell *cdkHeaderCellDef class="example-header-cell">Color</cdk-header-cell>
+      <cdk-cell *cdkCellDef="let row" class="example-cell"
+                [style.color]="row.color">
+        {{row.color}}
+      </cdk-cell>
+    </ng-container>
+
+    <cdk-header-row *cdkHeaderRowDef="displayedColumns" class="example-header-row"></cdk-header-row>
+    <cdk-row *cdkRowDef="let row; columns: displayedColumns;" class="example-row"></cdk-row>
+  </cdk-table>
+</div> -->

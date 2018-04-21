@@ -1,0 +1,23 @@
+<div class="nav">
+  <mat-toolbar color="primary" class="mat-elevation-z9">
+    <span><i class="fa fa-home"></i> HOME  </span>
+    <div class="navbar">
+      <ul class="menu">
+        <li><a  routerLink="/hallmap">Electronics <i class="fa fa-angle-down"></i></a></li>
+        <li><a  routerLink="/hallmap">Clothes <i class="fa fa-angle-down"></i></a></li>
+        <li><a  routerLink="/hallmap">Shoes <i class="fa fa-angle-down"></i></a></li>
+      </ul>
+    </div>
+    <!-- <div fxLayout="row" fxShow="false" fxShow.gt-sm class="nav">
+      <a href=""><p class="text-upper tc-white-700">HOME</p></a>
+    </div>
+    <button mat-button [mat-menu-trigger-for]="menubar" fxHide="false" fxHide.gt-sm>
+    <mat-icon>menu</mat-icon>
+    </button> -->
+  </mat-toolbar>
+
+  <mat-menu x-position="before" #menubar="matMenu">
+      <button mat-button routerLink="/" class="text-upper tc-white-700">HOME</button>
+      <button mat-button class="text-upper tc-white-700">ABOUT</button>
+  </mat-menu>
+</div>

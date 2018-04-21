@@ -1,0 +1,108 @@
+<mat-toolbar class="toolbar">
+  <button *ngIf="sideNav.opened" type="button" mat-button (click)="sideNav.toggle()">
+    <i class="fa fa-angle-double-left"></i>
+  </button>
+  <button *ngIf="!sideNav.opened" type="button" mat-button (click)="sideNav.toggle()">
+    <i class="fa fa-bars"></i>
+  </button>
+  <span class="product-logo">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+      <g>
+        <path fill="#FDB71F" d="M31.027,26.063c0,6.137-4.821,11.114-10.772,11.114c-5.95,0-10.772-4.978-10.772-11.114
+         c0-6.142,4.823-11.119,10.772-11.119C26.206,14.945,31.027,19.922,31.027,26.063z" />
+        <ellipse fill="#F47B20" cx="29.735" cy="20.059" rx="10.772" ry="11.115" />
+      </g>
+      <polygon fill="#FCB71D" points="44.029,17.057 39.626,16.473 36.647,19.77 35.842,15.401 31.786,13.587 35.693,11.471 36.164,7.054 
+       39.384,10.115 43.73,9.198 41.813,13.206 " />
+      <polygon fill="#F37B21" points="18.521,33.238 14.136,33.943 12.229,37.955 10.204,34.001 5.799,33.429 8.934,30.279 8.118,25.914 
+       12.08,27.922 15.981,25.797 15.295,30.186 " />
+    </svg>
+  </span>
+  <span class="product-name">Neutron Dashboard</span>
+</mat-toolbar>
+<div class="dashboard-container">
+  <mat-sidenav-container>
+    <mat-sidenav #sideNav class="sidenav" mode="side" opened="true">
+      <div class="sidenav-container">
+        <div class="sidenav-title">
+          <h2>Revenue Dashboard</h2>
+        </div>
+        <div class="sidenav-content">
+          <div class="sidenav-menu">
+            <ul>
+              <li (click)="submenu1 = !submenu1">
+                <a>
+                  <i class="fa fa-angle-right"></i> Stats</a>
+              </li>
+              <ul *ngIf="submenu1" class="sidenav-submenu">
+                <li>
+                  <a routerLink="/dashboard">
+                    <i class="fa fa-angle-right"></i> Stats</a>
+                </li>
+                <li>
+                  <a routerLink="/dashboard">
+                    <i class="fa fa-angle-right"></i> Forms</a>
+                </li>
+                <li>
+                  <a routerLink="/dashboard">
+                    <i class="fa fa-angle-right"></i> Tables</a>
+                </li>
+                <li>
+                  <a routerLink="/dashboard">
+                    <i class="fa fa-angle-right"></i> Menu</a>
+                </li>
+                <li>
+                  <a routerLink="/dashboard">
+                    <i class="fa fa-angle-right"></i> Menu</a>
+                </li>
+              </ul>
+              <li>
+                <a routerLink="/dashboard/forms">
+                  <i class="fa fa-angle-right"></i> Forms</a>
+              </li>
+              <li>
+                <a routerLink="/dashboard/table">
+                  <i class="fa fa-angle-right"></i> Tables</a>
+              </li>
+              <li>
+                <a routerLink="/dashboard">
+                  <i class="fa fa-angle-right"></i> Menu</a>
+              </li>
+              <li (click)="toggle()">
+                <a routerLink="/dashboard">
+                  <i class="fa fa-angle-right"></i> Menu</a>
+              </li>
+              <ul [@popOverState]="stateName">
+                <li>
+                  <a routerLink="/dashboard">
+                    <i class="fa fa-angle-right"></i> Stats</a>
+                </li>
+                <li>
+                  <a routerLink="/dashboard">
+                    <i class="fa fa-angle-right"></i> Forms</a>
+                </li>
+                <li>
+                  <a routerLink="/dashboard">
+                    <i class="fa fa-angle-right"></i> Tables</a>
+                </li>
+                <li>
+                  <a routerLink="/dashboard">
+                    <i class="fa fa-angle-right"></i> Menu</a>
+                </li>
+                <li>
+                  <a routerLink="/dashboard">
+                    <i class="fa fa-angle-right"></i> Menu</a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </mat-sidenav>
+
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-container>
+</div>
+<div class="dashboard-footer">Copyright &copy; 2017</div>

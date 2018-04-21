@@ -1,0 +1,58 @@
+<app-nav></app-nav>
+
+<div class="hall_map">
+  <mat-card>
+    <mat-card-header>Hall Map</mat-card-header>
+    <mat-card-content class="stands">
+
+      <img src="assets/Hallmap.jpg" width="800" height="500" alt="" usemap="#hallmap">
+      <map name="hallmap">
+          <area shape="rect" coords="60,200, 120,260"
+            (mouseenter)="mouseEnter($event)"
+            (mouseleave)="mouseLeave($event)"
+            (click)="openPopup({image: '', details: ''})">
+          <area shape="rect" coords="60,260, 120,320"
+          (mouseenter)="mouseEnter($event)"
+          (mouseleave)="mouseLeave($event)"
+          (click)="openPopup({image: '', details: ''})" href="">
+          <area shape="rect" coords="60,320, 120,380"
+          (mouseenter)="mouseEnter($event)"
+          (mouseleave)="mouseLeave($event)"
+          (click)="openPopup({image: '', details: ''})" href="">
+
+          <area shape="rect" coords="180,200, 240,360" href="">
+          <area shape="rect" coords="180,260, 240,360" href="">
+          <area shape="rect" coords="240,200, 300,260" href="">
+          <area shape="rect" coords="240,260, 300,320" href="">
+          <area shape="rect" coords="300,200, 360,260" href="">
+          <area shape="rect" coords="300,260, 360,320" href="">
+          <area shape="rect" coords="360,200, 420,260" href="">
+          <area shape="rect" coords="360,260, 420,320" href="">
+          <area shape="rect" coords="420,200, 480,260" href="">
+          <area shape="rect" coords="420,260, 480,320" href="">
+          <area shape="rect" coords="480,200, 540,260" href="">
+          <area shape="rect" coords="480,260, 540,320" href="">
+          <area shape="rect" coords="540,200, 600,260" href="">
+          <area shape="rect" coords="540,260, 600,320" href="">
+          
+          <area shape="rect" coords="180,380, 420,440" href="">
+          <area shape="rect" coords="240,380, 300,440" href="">
+          <area shape="rect" coords="300,380, 360,440" href="">
+          <area shape="rect" coords="360,280, 420,440" href="">
+          <area shape="rect" coords="420,380, 480,440" href="">
+          <area shape="rect" coords="480,380, 540,440" href="">
+          <area shape="rect" coords="540,380, 600,440" href="">
+
+          <area shape="rect" coords="660,200, 720,260" href="">
+          <area shape="rect" coords="660,260, 720,320" href="">
+          <area shape="rect" coords="660,320, 720,380" href="">
+        </map>
+
+        <div #standDetails id="stand_details">
+          <h2>Details</h2>
+          <p>Content</p>
+        </div>
+        
+    </mat-card-content>
+  </mat-card>
+</div>

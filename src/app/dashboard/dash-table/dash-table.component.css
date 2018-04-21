@@ -1,0 +1,77 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.example-header {
+  min-height: 64px;
+  display: flex;
+  align-items: baseline;
+  padding: 8px 24px 0;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  flex-grow: 1;
+  margin-left: 32px;
+}
+
+/* .example-table {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.example-header-row, .example-row {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    height: 32px;
+    padding: 0 8px;
+}
+  
+.example-cell, .example-header-cell {
+    flex: 1;
+}
+  
+.example-header-cell {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.54);
+}
+  
+.example-cell {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.87);
+} */
+
+  
+/* :host {
+  padding: 25px;
+  display: block;
+}
+.cdk-table {
+  font-size: 14px;
+  display: block;
+  border: solid 1px #ccc;
+  border-bottom: none;
+}
+.cdk-table .cdk-row, .cdk-table .cdk-header-row {
+  display: flex;
+}
+.cdk-table .cdk-cell, .cdk-table .cdk-header-cell {
+  flex: 1;
+  border-bottom: solid 1px #ccc;
+  padding: 5px;
+}
+.cdk-table .cdk-header-cell {
+  font-weight: bold;
+} */

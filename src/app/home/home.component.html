@@ -1,0 +1,222 @@
+<header class="nav">
+  <div class="nav-highlights"></div>
+  <nav class="main-nav">
+    <div class="company-logo">
+      <div class="company-name">
+        <span class="logo-pic">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+            <g>
+              <path fill="#FDB71F" d="M31.027,26.063c0,6.137-4.821,11.114-10.772,11.114c-5.95,0-10.772-4.978-10.772-11.114
+            c0-6.142,4.823-11.119,10.772-11.119C26.206,14.945,31.027,19.922,31.027,26.063z" />
+              <ellipse fill="#F47B20" cx="29.735" cy="20.059" rx="10.772" ry="11.115" />
+            </g>
+            <polygon fill="#FCB71D" points="44.029,17.057 39.626,16.473 36.647,19.77 35.842,15.401 31.786,13.587 35.693,11.471 36.164,7.054 
+          39.384,10.115 43.73,9.198 41.813,13.206 " />
+            <polygon fill="#F37B21" points="18.521,33.238 14.136,33.943 12.229,37.955 10.204,34.001 5.799,33.429 8.934,30.279 8.118,25.914 
+          12.08,27.922 15.981,25.797 15.295,30.186 " />
+          </svg>
+        </span>
+        <div class="logo-text">
+          <span class="main-name">Neutron Stars</span>
+          <span class="main-services"><em>Technology &amp; Consulting</em></span>
+        </div>
+      </div>
+      <div class="menu-button" fxHide="false" fxHide.gt-xs>
+        <button mat-button (click)="isMenuOpen = !isMenuOpen"
+          cdkOverlayOrigin
+          #trigger="cdkOverlayOrigin">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <ul class="nav-links" fxShow="false" fxShow.gt-xs>
+      <li class="active">
+        <a routerLink="/home">Home</a>
+      </li>
+      <li>
+        <a routerLink="/home">Products</a>
+      </li>
+      <li>
+        <a routerLink="/home">Services</a>
+      </li>
+      <li>
+        <a routerLink="/home">Contacts</a>
+      </li>
+      <li>
+        <a routerLink="/home">About</a>
+      </li>
+    </ul>
+    <ng-template cdkConnectedOverlay
+      [cdkConnectedOverlayOrigin]="trigger"
+      [cdkConnectedOverlayOpen]="isMenuOpen">
+      <ul class="hidden-links" fxHide="false" fxHide.gt-xs>
+        <li class="active">
+          <a routerLink="/home" (click)="isMenuOpen = !isMenuOpen">Home</a>
+        </li>
+        <li>
+          <a routerLink="/home" (click)="isMenuOpen = !isMenuOpen">Products</a>
+        </li>
+        <li>
+          <a routerLink="/home" (click)="isMenuOpen = !isMenuOpen">Services</a>
+        </li>
+        <li>
+          <a routerLink="/home" (click)="isMenuOpen = !isMenuOpen">Contacts</a>
+        </li>
+        <li>
+          <a routerLink="/home" (click)="isMenuOpen = !isMenuOpen">About</a>
+        </li>
+      </ul>
+    </ng-template>
+  </nav>
+</header>
+<section class="intro">
+  <mat-card class="intro-content">
+    <!-- <button mat-button>
+      <i class="fa fa-angle-double-left"></i>
+    </button>
+    <div class="usecase-img">
+      <img src="assets/macbookcut.jpg"/>
+    </div> -->
+    <div class="usecase-text">
+      <h1>Welcome</h1>
+      <p>We are a technoloy company commited to delivering world class..</p>
+      <p>Coming soon..</p>
+    </div>
+    <!-- <button mat-button>
+      <i class="fa fa-angle-double-right"></i>
+    </button> -->
+  </mat-card>
+</section>
+<section class="features">
+  <div class="features-heading">
+    <h1>Our Offers</h1>
+    <p>What we offer</p>
+  </div>
+  <div class="features-container">
+    <mat-card class="feature">
+      <div class="info">
+        <i class="fa fa-dashboard"></i>
+        <h1>Company Websites</h1>
+      </div>
+    </mat-card>
+    <mat-card class="feature">
+      <div class="info">
+        <i class="fa fa-question-circle-o"></i>
+        <h1>Ecommerce Websites</h1>
+      </div>
+    </mat-card>
+    <mat-card class="feature">
+      <div class="info">
+        <i class="fa fa-rocket"></i>
+        <h1>Admin Dashboards</h1>
+      </div>
+    </mat-card>
+    <mat-card class="feature">
+      <div class="info">
+        <i class="fa fa-line-chart"></i>
+        <h1>Backend API's</h1>
+        <!-- <p>Lorem ipsum lorem ipsum lorem ipsum</p> -->
+      </div>
+    </mat-card>
+  </div>
+</section>
+<section class="products">
+  <div class="products-heading">
+    <h1>Products</h1>
+    <p>What you get</p>
+  </div>
+  <div class="products-container" [@productsAnimation]="3">
+    <mat-card class="product">
+      <div class="product-img">
+        <i class="fa fa-microchip"></i>
+      </div>
+      <div class="product-list">
+        <h2>Products</h2>
+        <ul>
+          <li>
+            <i class="fa fa-check"></i>Product 1</li>
+          <li>
+            <i class="fa fa-check"></i>Product 2</li>
+          <li>
+            <i class="fa fa-check"></i>Product 3</li>
+          <li>
+            <i class="fa fa-check"></i>Product 4</li>
+          <li>
+            <i class="fa fa-check"></i>Product 5</li>
+        </ul>
+      </div>
+    </mat-card>
+    <mat-card class="product">
+      <div class="product-img">
+        <i class="fa fa-database"></i>
+      </div>
+      <div class="product-list">
+        <h2>Products</h2>
+        <ul>
+          <li>
+            <i class="fa fa-check"></i>Product 1</li>
+          <li>
+            <i class="fa fa-check"></i>Product 2</li>
+          <li>
+            <i class="fa fa-check"></i>Product 3</li>
+          <li>
+            <i class="fa fa-check"></i>Product 4</li>
+          <li>
+            <i class="fa fa-check"></i>Product 5</li>
+        </ul>
+      </div>
+    </mat-card>
+    <mat-card class="product">
+      <div class="product-img">
+        <i class="fa fa-industry"></i>
+      </div>
+      <div class="product-list">
+        <h2>Products</h2>
+        <ul>
+          <li>
+            <i class="fa fa-check"></i>Product 1</li>
+          <li>
+            <i class="fa fa-check"></i>Product 2</li>
+          <li>
+            <i class="fa fa-check"></i>Product 3</li>
+          <li>
+            <i class="fa fa-check"></i>Product 4</li>
+          <li>
+            <i class="fa fa-check"></i>Product 5</li>
+        </ul>
+      </div>
+    </mat-card>
+  </div>
+</section>
+<footer class="footer">
+  <div class="links">
+    <div class="links-content">
+      <div class="link-list">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Telephone</li>
+          <li>Email</li>
+          <li>Fax</li>
+        </ul>
+      </div>
+      <div class="link-list">
+        <h2>About Us</h2>
+        <ul>
+          <li>Info 1</li>
+          <li>Info 2</li>
+          <li>Info 3</li>
+        </ul>
+      </div>
+      <div class="link-list">
+        <h2>Newsletters</h2>
+        <ul>
+          <li>Info</li>
+          <li>Info</li>
+          <li>Info</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">Copyright &copy; Neutron Stars 2017</div>
+</footer>

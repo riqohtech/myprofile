@@ -1,0 +1,31 @@
+/* .nav {
+    height: 20px;
+} */
+.navbar ul {
+    list-style: none;
+}
+.navbar .menu {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.navbar .menu li {
+    flex: 1;
+    display: flex;
+    text-align: center;
+}
+.navbar .menu a {
+    color: #fff;
+    text-decoration: none;
+    flex: 1;
+    justify-content: center;
+    padding: 16px;
+}
+.navbar .menu a:hover {
+    color: #3F51B5;
+    background-color: #fff;
+}
+.navbar .menu a:focus {
+    color: #56EDE4;
+
+}

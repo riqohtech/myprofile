@@ -1,0 +1,60 @@
+.toolbar {
+    background-color: #004d4d;
+    color: #ffffff;
+}
+.toolbar button .fa {
+    font-size: 24px;
+}
+.product-logo {
+    margin-top: 10px;
+}
+.product-name {
+    color: #ffffff;
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.sidenav {
+    padding: 20px;
+    width: 270px;
+    background-color: #ffffff;
+    color: #004d4d;
+}
+.sidenav-container {
+    display: flex;
+    flex-direction: column;
+}
+.sidenav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidenav-menu ul li a {
+    text-decoration: none;
+    color: #004d4d;
+    font-size: 17px;
+    padding: 10px;
+    display: flex;
+}
+.sidenav-menu ul li a:active {
+    background-color: #004d4d;
+    color: #ffffff;
+}
+.sidenav-menu ul li a:hover {
+    background-color: #004d4d;
+    color: #ffffff;
+}
+.sidenav-menu ul li i {
+    margin-right: 10px;
+}
+.sidenav-submenu li {
+    margin-left: 40px;
+}
+.dashboard-footer {
+    background-color: #004d4d;
+    height: 30px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
