@@ -5,10 +5,6 @@
 /tmp
 /out-tsc
 
-# uncompiled files
-/e2e
-/src
-
 # dependencies
 /node_modules
 
